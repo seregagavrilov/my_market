@@ -1,50 +1,29 @@
 # README 
 
-Simple framework who is allow you meet about wsgi realization of back-end application.
-
-## Getting Started
-
-For install this framework you need to clone this repositori and not forget to meet with exempls.py file.
+ This example can quickly give you an idea of how work application that runs on Flask.
 
 ### Installing
-
-to run the application you need wsgi server implementation - uwsgi
-
-```
-pip install uwsgi
-```
 
 How to clone repo:
 
 ```
-git clone https://github.com/seregagavrilov/mywebframework
+git clone https://github.com/seregagavrilov/my_market
 ```
-in folder with project you need creat folder names: img - store image files your site
-                                                    stylesheets -  store css files
-                                                    templates - for store templates your HTML files your site
-                                                    
-for start your application you should create your application.py file and import need modules
-```
-from application import run_aplication
-```
-create your function and call special function for run application
-```
-def application(environ, start_responce):
-
-    return run_application(environ, statr_responce) 
-```
-and of course you only need pythone 3
-
-### run uwsgi
-
-for run uwsgi server use this exemple :
+For run this application you will need: flask, flask-alembic , flask-sqlalchemy. All of this extentions install to:
 
 ```
-$ uwsgi --http :9090 --wsgi-file app.py
+pip install <extention>
+```
+After install all that extenions, you can ran application by write this command:
 
-http - protocol
+```
+flask run
+```
+site will be starting run on localhost and will write you some thing like:
 
-9090 - port on work your server
+```
+ * Serving Flask app "market"
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+```
 
-app.py - you need write name your script
 

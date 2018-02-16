@@ -5,6 +5,7 @@ from app import app
 
 @app.route('/')
 @app.route('/index')
+@app.route('/product')
 def index():
     items = []
     products = Product.query.all()
